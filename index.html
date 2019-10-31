@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="all">
+    <div  class="display">
+        <h1 class="top-display"></h1>
+        <h1 class="operator"></h1>
+        <h1 class="first-display"></h1>
+    </div>
+    <div class="main first-row">
+        <button class="clear" onclick="clearAll()">C</button>
+        <button class="interchange" onclick="power()">x<sup>2</sup></button>
+        <button class="percent" onclick="factorial()">!</button>
+        <button class="violet" onclick="change('/')">&#247</button>
+        <button class="violet trigo" onclick="trigo(0)">sin( )</button>
+    </div>
+    <div class="main second-row">
+      <button class="number" onclick="change('7')">7</button>
+      <button class="number" onclick="change('8')">8</button>
+      <button class="number" onclick="change('9')">9</button>
+      <button class="violet" onclick="change('*')">x</button>
+      <button class="violet trigo" onclick="trigo(1)">cos( )</button>
+    </div>
+    <div class="main third-row">
+      <button class="number" onclick="change('4')">4</button>
+      <button class="number" onclick="change('5')">5</button>
+      <button class="number" onclick="change('6')">6</button>
+      <button class="violet" onclick="change('-')">-</button>
+      <button class="violet trigo" onclick="trigo(2)">tan( )</button>
+    </div>
+    <div class="main fourth-row">
+      <button class="number" onclick="change('1')">1</button>
+      <button class="number" onclick="change('2')">2</button>
+      <button class="number" onclick="change('3')">3</button>
+      <button class="violet" onclick="change('+')">+</button>
+      <button class="violet trigo" onclick="squareRoot()">&#8730</button>
+    </div>
+    <div class="main fifth-row">
+      <button class="number" onclick="change('0')">0</button>
+      <button class="decimal" onclick="decimal()">.</button>
+      <button class="delete" onclick="del()">del</button>
+      <button class="yellow" onclick="equal()">=</button>
+    </div>
+  </div>
+</body>
+</html>
