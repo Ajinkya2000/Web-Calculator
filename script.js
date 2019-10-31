@@ -25,11 +25,8 @@ function factorial(){
 }
 
 function power(){
-  var x = result.innerHTML.slice(0,result.innerHTML.length - 1);
-  var y = result.innerHTML.slice(result.innerHTML.length - 1,);
-  Number(y);
-  y = y ** 2;
-  result.innerHTML = x + y;
+  equal();
+  result.innerHTML = result.innerHTML ** 2;
 }
 
 function decimal(){
@@ -56,11 +53,8 @@ function del(){
 }
 
 function squareRoot(){
-  var x = result.innerHTML.slice(0,result.innerHTML.length - 1);
-  var y = result.innerHTML.slice(result.innerHTML.length - 1,);
-  Number(y);
-  y = (Math.round(Math.sqrt(y) * 1000))/1000
-  result.innerHTML = x + y;
+  equal();
+  result.innerHTML= (Math.round(Math.sqrt(result.innerHTML) * 1000))/1000;
 }
 
 function trigo(choice){
